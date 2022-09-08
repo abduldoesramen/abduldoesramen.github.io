@@ -7,6 +7,15 @@ Code-style: standard Vanilla javascript w/ HTML, CSS\
 Tech-stack: javascript, HTML, CSS, domaincheap, github, netlify\
 Features: real-time updates via MD files onto my website.
 
-Project status:
+### Project status:
+- [ ] Mercury
+- [x] Venus
+- [x] Earth (Orbit/Moon)
+- [x] Mars
+- [ ] Jupiter
+- [ ] Saturn
+- [ ] Uranus
+- [ ] Neptune
+- [ ] Comet Haley
 - [] Website visible and running. :sweat_smile:- [] Website implemented and usable. 
 
