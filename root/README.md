@@ -5,8 +5,8 @@
 Version 1.0\
 Code-style: standard Vanilla javascript w/ HTML, CSS\
 Tech-stack: javascript, HTML, CSS, domaincheap, github, netlify\
-Features: real-time updates via MD files onto my website.\
+Features: real-time updates via MD files onto my website.
 
-Project status:\ 
+Project status:
 - [] Website visible and running. :sweat_smile:- [] Website implemented and usable. 
 
