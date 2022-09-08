@@ -8,6 +8,7 @@ Tech-stack: javascript, HTML, CSS, domaincheap, github, netlify\
 Features: real-time updates via MD files onto my website.
 
 ### Project status:
+- [x] Basic website exists
 - [ ] Website visible and running. :sweat_smile:
 - [ ] Website implemented and usable. 
 
