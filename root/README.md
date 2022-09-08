@@ -1,7 +1,7 @@
 # abduldoesramen.github.io:
 # abdulblog.me
 
-:slightly_smiling_face: Creating a simple blog-style website for writing down my current COMP course notes with MD files. :blush:__
+:slightly_smiling_face: Creating a simple blog-style website for writing down my current COMP course notes with MD files. :blush:\
 Version 1.0__
 Code-style: standard Vanilla javascript w/ HTML, CSS__
 Tech-stack: javascript, HTML, CSS, domaincheap, github, netlify__
