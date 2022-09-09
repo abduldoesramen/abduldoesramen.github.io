@@ -11,6 +11,8 @@ Features: real-time updates via MD files onto my website.
 ### Project status:
 
 - [x] Basic website exists.
-- [ ] Github can run locally on my computer.
+- [x] Github can run locally on my computer.
+- [x] Website is integrated with Netlify
+- [ ] Website has a SSL certificate
 - [ ] Website is visible and running. :sweat_smile:
 - [ ] Website is implemented and currently usable.
