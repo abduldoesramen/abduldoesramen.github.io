@@ -14,5 +14,5 @@ Features: real-time updates via MD files onto my website.
 - [x] Github can run locally on my computer.
 - [x] Website is integrated with Netlify
 - [x] Website has a SSL certificate :blush:
-- [ ] Website is visible and running. :sweat_smile:
-- [ ] Website is implemented and currently usable.
+- [x] Website is visible and running. :sweat_smile:
+- [x] Website is implemented and currently usable.
