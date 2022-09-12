@@ -12,6 +12,81 @@
     <title>Abdul's blog</title>
   </head>
   <body>
+    <!-- navabr -->
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link active"
+          id="aboutme-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#aboutme-tab-pane"
+          type="button"
+          role="tab"
+          aria-controls="aboutme-tab-pane"
+          aria-selected="true"
+        >
+          About me
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link"
+          id="comp3311-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#comp3311-tab-pane"
+          type="button"
+          role="tab"
+          aria-controls="comp3311-tab-pane"
+          aria-selected="false"
+        >
+          COMP3311
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link"
+          id="comp4920-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#comp4920-tab-pane"
+          type="button"
+          role="tab"
+          aria-controls="comp4920-tab-pane"
+          aria-selected="false"
+        >
+          COMP4920
+        </button>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div
+        class="tab-pane fade show active"
+        id="aboutme-tab-pane"
+        role="tabpanel"
+        aria-labelledby="aboutme-tab"
+        tabindex="0"
+      >
+        Testing
+      </div>
+      <div
+        class="tab-pane fade"
+        id="comp3311-tab-pane"
+        role="tabpanel"
+        aria-labelledby="comp3311-tab"
+        tabindex="0"
+      >
+        ...
+      </div>
+      <div
+        class="tab-pane fade"
+        id="comp4920-tab-pane"
+        role="tabpanel"
+        aria-labelledby="comp4920-tab"
+        tabindex="0"
+      >
+        ...
+      </div>
+    </div>
+
     <h1 class="lead text-center display-1">Abdul's blog</h1>
     <!-- JavaScript Bundle with Popper -->
     <script
