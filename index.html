@@ -1,11 +1,141 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>My first website</title>
-</head>
-<body>
-  <h1>Welcome to my blog</h1>
-  <p>This is where I will be writing my COMP notes<p>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <title>Abdul's blog</title>
+  </head>
+  <body>
+    <!-- navabr -->
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link active"
+          id="aboutme-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#aboutme-tab-pane"
+          type="button"
+          role="tab"
+          aria-controls="aboutme-tab-pane"
+          aria-selected="true"
+        >
+          About me
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link"
+          id="comp3311-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#comp3311-tab-pane"
+          type="button"
+          role="tab"
+          aria-controls="comp3311-tab-pane"
+          aria-selected="false"
+        >
+          COMP3311
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link"
+          id="comp4920-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#comp4920-tab-pane"
+          type="button"
+          role="tab"
+          aria-controls="comp4920-tab-pane"
+          aria-selected="false"
+        >
+          COMP4920
+        </button>
+      </li>
+    </ul>
+
+    <div class="tab-content" id="myTabContent">
+      <div
+      class="tab-pane fade"
+      id="comp3311-tab-pane"
+      role="tabpanel"
+      aria-labelledby="comp3311-tab"
+      tabindex="0"
+    >
+      test
+      Future COMP3311 notes will be here, converted from MD file to HTML code.
+    </div>
+    <div
+      class="tab-pane fade"
+      id="comp4920-tab-pane"
+      role="tabpanel"
+      aria-labelledby="comp4920-tab"
+      tabindex="0"
+    >
+      Future COMP4920 notes will be here, converted from MD file to HTML code.
+    </div>
+      <div
+        class="tab-pane fade show active"
+        id="aboutme-tab-pane"
+        role="tabpanel"
+        aria-labelledby="aboutme-tab"
+        tabindex="0"
+      >
+        <h1 class="lead text-center display-2">Abdul's blog</h1>
+        <p class="lead text-center text-muted">Hey there! My name is Abdulrehman Ahmad and I currently a third-year Computer Science student studying at the University of New South Wales! Currently implementing a blog-type website that will host all my future notes for the COMP courses I'm undertaking. Feel free to connect with me below!</p>
+        <p class="lead text-center text-muted">Languages undertaken in COMP courses: Python, Shell/Bash, Java, C, Prolog.</p>
+        <p class="lead text-center text-muted">Languages currently learning: SQL, HTML/CSS, Javascript</p>
+        <p class="lead text-center text-muted">Current tech stack: HTML/CSS, Javascript, Bootstrap5</p>
+
+        <div class="card">
+          <div class="card-header">My socials</div>
+          <div class="card-body">
+            <h5 class="card-title">Github</h5>
+            <p class="card-text">
+              Access to all my personal projects' code so far, feel free to
+              contribute or give feedback!
+            </p>
+            <a href="https://github.com/abduldoesramen" class="btn btn-primary"
+              >Github</a
+            >
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">LinkedIn</h5>
+            <p class="card-text">View and connect with me on LinkedIn!</p>
+            <a
+              href="https://www.linkedin.com/in/abdulrehman-ahmad-76b9a0223/"
+              class="btn btn-primary"
+              >LinkedIn</a
+            >
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Twitter</h5>
+            <p class="card-text">
+              View my journey, thoughts and achievements I share with the world
+              as I learn to code!
+            </p>
+            <a href="https://twitter.com/abdulDoesRamen" class="btn btn-primary"
+              >Twitter</a
+            >
+          </div>
+        </div>
+
+    </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
