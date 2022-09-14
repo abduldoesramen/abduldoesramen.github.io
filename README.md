@@ -1,5 +1,3 @@
-# abduldoesramen.github.io:
-
 # abdulblog.me
 
 :slightly_smiling_face: Creating a simple blog-style website for writing down my current COMP course notes with MD files. :blush:\
@@ -16,3 +14,6 @@ Features: real-time updates via MD files onto my website.
 - [x] Website has a SSL certificate :blush:
 - [x] Website is visible and running. :sweat_smile:
 - [x] Website is implemented and currently usable.
+
+### Website live: 
+https://abdulblog.me
