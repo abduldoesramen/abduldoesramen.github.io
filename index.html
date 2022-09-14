@@ -12,146 +12,70 @@
     <title>Abdul's blog</title>
   </head>
   <body>
-    <!-- navbar -->
-    <ul class="nav nav-tabs mb-5" id="myTab" role="tablist">
-      <li class="nav-item" role="presentation">
-        <button
-          class="nav-link active"
-          id="aboutme-tab"
-          data-bs-toggle="tab"
-          data-bs-target="#aboutme-tab-pane"
-          type="button"
-          role="tab"
-          aria-controls="aboutme-tab-pane"
-          aria-selected="true"
-        >
-          About me
-        </button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button
-          class="nav-link"
-          id="comp3311-tab"
-          data-bs-toggle="tab"
-          data-bs-target="#comp3311-tab-pane"
-          type="button"
-          role="tab"
-          aria-controls="comp3311-tab-pane"
-          aria-selected="false"
-        >
-          COMP3311
-        </button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button
-          class="nav-link"
-          id="comp4920-tab"
-          data-bs-toggle="tab"
-          data-bs-target="#comp4920-tab-pane"
-          type="button"
-          role="tab"
-          aria-controls="comp4920-tab-pane"
-          aria-selected="false"
-        >
-          COMP4920
-        </button>
-      </li>
-    </ul>
+    <!-- Updated Navbar -->
+    <nav class="navbar navbar-light bg-light">
+      <form class="container-fluid justify-content-start">
+        <button type="button" onclick="location.href='https://abdulblog.me'" class="btn btn-light text-center btn-outline-success me-2">About me</button>
+        <button type="button" onclick="location.href='https://abdulblog.me/COMP3311.html'" class="btn btn-light text-center btn-outline-secondary me-2">COMP3311</button>
+        <button type="button" onclick="location.href='https://abdulblog.me/COMP4920.html'" class="btn btn-light text-center btn-outline-secondary me-2">COMP4920</button>
+      </form>
+    </nav>
 
-    <div class="tab-content" id="myTabContent">
-      <div
-      class="tab-pane fade"
-      id="comp3311-tab-pane"
-      role="tabpanel"
-      aria-labelledby="comp3311-tab"
-      tabindex="0"
-    >
-      <!-- COMP3311 NOTES -->
-      <div class="alert alert-primary" role="alert">
-        I'll be adding notes to these tabs as the term progresses.
+    <h1 class="lead text-center display-2 text-muted">Abdul's blog</h1>
+    <p class="lead text-center text-muted">Hey there! My name is Abdulrehman Ahmad and I'm currently a third-year Computer Science student studying at 
+      the University of New South Wales! Currently implementing a blog-type website that will host all my future notes for the COMP courses 
+      I'm taking. Feel free to connect with me below!</p>
+    <p class="lead text-center text-muted">Languages undertaken in COMP courses: Python, Shell/Bash, Java, C, Prolog.</p>
+    <p class="lead text-center text-muted">Languages currently learning: SQL, HTML/CSS, Javascript</p>
+    <p class="lead text-center text-muted mb-5">Current tech stack: HTML/CSS, Javascript, Bootstrap5</p>
+
+    <!-- Personal project grid-list -->
+    <h1 class="lead text-center display-2 text-muted">Personal projects</h1>
+    <div class="d-grid gap-3">
+      <div class="p-2 bg-light fw-bold" style="border: 1px solid gainsboro">
+        <a href="https://www.abdulblog.me/" class="link-info">abdulblog.me</a>
       </div>
-      <h1 class="lead text-center display-2 text-muted">COMP3311 - Database Systems</h1>
-      Future COMP3311 notes will be here, converted from MD file to HTML code.
-
-
-    </div>
-    <div
-      class="tab-pane fade"
-      id="comp4920-tab-pane"
-      role="tabpanel"
-      aria-labelledby="comp4920-tab"
-      tabindex="0"
-    >
-      <!-- COMP4920 NOTES -->
-      <div class="alert alert-primary" role="alert">
-        I'll be adding notes to these tabs as the term progresses.
+      <div class="p-2 bg-light text-muted" style="border: 1px solid gainsboro">
+        <a href="https://github.com/abduldoesramen/lookBook/" class="link-info">lookBook (currently in development)</a>
       </div>
-      <h1 class="lead text-center display-2 text-muted">COMP4920 - Management and Ethics</h1>
-      Future COMP4920 notes will be here, converted from MD file to HTML code.
+      <div class="p-2 bg-light mb-5 text-muted fst-italic" style="border: 1px solid gainsboro">myOpenLib (future contribution)</div>
     </div>
-      <div
-        class="tab-pane fade show active"
-        id="aboutme-tab-pane"
-        role="tabpanel"
-        aria-labelledby="aboutme-tab"
-        tabindex="0"
-      >
-        <h1 class="lead text-center display-2 text-muted">Abdul's blog</h1>
-        <p class="lead text-center text-muted">Hey there! My name is Abdulrehman Ahmad and I'm currently a third-year Computer Science student studying at 
-          the University of New South Wales! Currently implementing a blog-type website that will host all my future notes for the COMP courses 
-          I'm taking. Feel free to connect with me below!</p>
-        <p class="lead text-center text-muted">Languages undertaken in COMP courses: Python, Shell/Bash, Java, C, Prolog.</p>
-        <p class="lead text-center text-muted">Languages currently learning: SQL, HTML/CSS, Javascript</p>
-        <p class="lead text-center text-muted mb-5">Current tech stack: HTML/CSS, Javascript, Bootstrap5</p>
-
-        <!-- Personal project grid-list -->
-        <h1 class="lead text-center display-2 text-muted">Personal projects</h1>
-        <div class="d-grid gap-3">
-          <div class="p-2 bg-light fw-bold" style="border: 1px solid gainsboro">
-            <a href="https://www.abdulblog.me/" class="link-info">abdulblog.me</a>
-          </div>
-          <div class="p-2 bg-light text-muted" style="border: 1px solid gainsboro">
-            <a href="https://github.com/abduldoesramen/lookBook/" class="link-info">lookBook (currently in development)</a>
-          </div>
-          <div class="p-2 bg-light mb-5 text-muted fst-italic" style="border: 1px solid gainsboro">myOpenLib (future contribution)</div>
-        </div>
 
 
-        <div class="card">
-          <div class="card-header text-muted">My socials</div>
-          <div class="card-body">
-            <h5 class="card-title text-muted">Github</h5>
-            <p class="card-text text-muted">
-              Access to all my personal projects' code so far, feel free to
-              contribute or give feedback!
-            </p>
-            <a href="https://github.com/abduldoesramen" class="btn btn-info"
-              >Github</a
-            >
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title text-muted">LinkedIn</h5>
-            <p class="card-text text-muted">View and connect with me on LinkedIn!</p>
-            <a
-              href="https://www.linkedin.com/in/abdulrehman-ahmad-76b9a0223/"
-              class="btn btn-info"
-              >LinkedIn</a
-            >
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title text-muted">Twitter</h5>
-            <p class="card-text text-muted">
-              View my journey, thoughts and achievements I share with the world
-              as I learn to code!
-            </p>
-            <a href="https://twitter.com/abdulDoesRamen" class="btn btn-info"
-              >Twitter</a
-            >
-        </div>
+    <div class="card">
+      <div class="card-header text-muted">My socials</div>
+      <div class="card-body">
+        <h5 class="card-title text-muted">Github</h5>
+        <p class="card-text text-muted">
+          Access to all my personal projects' code so far, feel free to
+          contribute or give feedback!
+        </p>
+        <a href="https://github.com/abduldoesramen" class="btn btn-info"
+          >Github</a
+        >
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title text-muted">LinkedIn</h5>
+        <p class="card-text text-muted">View and connect with me on LinkedIn!</p>
+        <a
+          href="https://www.linkedin.com/in/abdulrehman-ahmad-76b9a0223/"
+          class="btn btn-info"
+          >LinkedIn</a
+        >
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title text-muted">Twitter</h5>
+        <p class="card-text text-muted">
+          View my journey, thoughts and achievements I share with the world
+          as I learn to code!
+        </p>
+        <a href="https://twitter.com/abdulDoesRamen" class="btn btn-info"
+          >Twitter</a
+        >
     </div>
 
     <!-- Testing button -->
