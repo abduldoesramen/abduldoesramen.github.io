@@ -47,7 +47,147 @@
       COMP3311 - Database Systems
     </h1>
     <!-- MD File CODE HERE -->
+    <h1 id="week-1">Week 1</h1>
+    <h3 id="data-modelling">Data Modelling</h3>
+    <p>Aims of data modelling:</p>
+    <ul>
+      <li>
+        Describe what <strong>information</strong> is contained in the database.
+      </li>
+      <li>
+        Describe <strong>relationshipos</strong> between data items, e.g JOHN is
+        enrolled in COMP3311.
+      </li>
+      <li>
+        Describe <strong>contstraints</strong> on data, e.g student&#39;s
+        can&#39;t enrol more than certain amount of courses.
+      </li>
+    </ul>
+    <p>Data modelling is a <strong>design</strong> process.</p>
+    <ul>
+      <li>Converts requirements into a data model.</li>
+    </ul>
+    <p>Kinds of data models:</p>
+    <ul>
+      <li>
+        <strong>Logical</strong>: abstract, for conceptual design, e.g. ER, UML.
+      </li>
+      <li>
+        <strong>Physical</strong>: record-based, for implementation, e.g.
+        relational, SQL.
+      </li>
+    </ul>
+    <p>
+      Strategy: design using abstract model; map to physical model. Requirements
+      --&gt; ER Model --&gt; (Relational Model) --&gt; SQL Schema [GOAL].
+    </p>
+    <h3 id="some-design-ideas">Some Design Ideas</h3>
+    <ul>
+      <li>
+        Start simple, pick the most obvious things that are relevant to the
+        requirements THEN refine.
+      </li>
+      <li>
+        Identify objects and their properties, THEN relationships between
+        objects.
+      </li>
+      <li>
+        Most design involve kinds (classes) of people, e.g. customers,
+        executives, branch managers, etc.
+      </li>
+      <li>Keywods in requirements suggest data/relationships.</li>
+      <li>
+        Don&#39;t confuse operations with relationships
+        <ul>
+          <li>
+            (Operation: he <strong>buys</strong> a book; relationship (the
+            result): the book is <strong>owned</strong> by him).
+          </li>
+        </ul>
+      </li>
+      <li>
+        Consider all <em>possible</em> data, not just what is available (e.g.
+        given only SAMPLE data).
+      </li>
+    </ul>
+    <pre><code>GMail Data <span class="hljs-keyword">Model</span>
+================
+Objects:
+<span class="hljs-function"><span class="hljs-title">messages</span></span> ... title, content, sender*, timestamp
+<span class="hljs-function"><span class="hljs-title">users</span></span> ... gmail-address, name, password, ...
+<span class="hljs-function"><span class="hljs-title">labels</span></span> (tags) ... owner, name, colour parent*
+<span class="hljs-function"><span class="hljs-title">settings</span></span> ... name, value, user*
 
+Relationships:
+<span class="hljs-function"><span class="hljs-title">sender</span></span> ... messages - users
+<span class="hljs-function"><span class="hljs-title">recipients</span></span> ... messages - mail-address
+<span class="hljs-function"><span class="hljs-title">has</span></span>-label ... messages - labels
+<span class="hljs-function"><span class="hljs-title">tag</span></span>-hierarchy ... child-tag - parent-tag
+<span class="hljs-function"><span class="hljs-title">settings</span></span> ... user - setting
+
+Constraints:
+gmail-addresses are unique/distinct
+users must have a password
+every message has a timestamp
+every message has a sender
+message content should <span class="hljs-keyword">not</span> be empty
+</code></pre>
+    <h3 id="quality-of-design">Quality of Design</h3>
+    <p>
+      No single &quot;best&quot; design for a given application. Most important
+      aspects of a design (data model):
+    </p>
+    <ul>
+      <li>correctness (satisfies requirements accurately)</li>
+      <li>completeness (all reqs covered, all assumptions explict)</li>
+      <li>consistency (no contradictory statements)</li>
+    </ul>
+    <p>Potential <strong>inadequacies</strong> in a design:</p>
+    <ul>
+      <li>Omits information that needs to be included</li>
+      <li>Contains redundant information (-&gt; inconsistency)</li>
+      <li>Leads to an inefficient implementation</li>
+      <li>Violates syntactic or semantic rules of data model</li>
+    </ul>
+    <h1 id="er-model">ER Model</h1>
+    <h3 id="entity-relationship-data-modelling">
+      Entity-Relationship Data Modelling
+    </h3>
+    <p>
+      World is full of inter-related entities ER has three major modelling
+      constructs:
+    </p>
+    <ul>
+      <li>
+        <strong>attribute</strong>: data item describing a property of interest
+      </li>
+      <li>
+        <strong>entity</strong>: collection of attributes describing object of
+        interest
+      </li>
+      <li>
+        <strong>relationship</strong>: association between entities (objects)
+      </li>
+    </ul>
+    <p>
+      ER diagrams are a graphical <em>tool</em> for data modelling. An ER
+      diagram consists of:
+    </p>
+    <ul>
+      <li>A collection of <strong>entity set</strong> definitions</li>
+      <li>A collection of <strong>relationship</strong> set definitions</li>
+      <li>
+        <strong>Attributes</strong> associated with entity and relationship sets
+      </li>
+      <li>
+        <strong>Connections</strong> between entity and relationship sets.
+      </li>
+    </ul>
+    <p>
+      ER diagram example: Rectangles = entites, Ovals = attributes, Diamonds =
+      relationships.
+    </p>
+    <!-- END of MD File CODE -->
     <!-- JavaScript Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"

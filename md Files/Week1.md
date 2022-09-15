@@ -30,8 +30,6 @@ Requirements --> ER Model --> (Relational Model) --> SQL Schema [GOAL].
   - (Operation: he **buys** a book; relationship (the result): the book is **owned** by him).
 - Consider all _possible_ data, not just what is available (e.g. given only SAMPLE data).
 
-###
-
 ```
 GMail Data Model
 ================
