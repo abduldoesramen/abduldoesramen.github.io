@@ -1,5 +1,3 @@
-Hi everyone. This is just going to be a short blog journey of me learning React (via Udemy) through the Summer Holidays and how I understand some of the tougher concepts.
-
 # 02/01/2023
 
 ### *<u>Before React</u>*:
