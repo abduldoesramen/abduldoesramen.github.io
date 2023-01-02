@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-DVN1VDSLVF"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-DVN1VDSLVF");
+    </script>
+    <title>React Blog</title>
+  </head>
+  <body>
+    <!-- Updated Navbar -->
+    <nav class="navbar navbar-light sticky-top bg-light">
+      <form class="container-fluid justify-content-start">
+        <button
+          type="button"
+          onclick="location.href='https://abdulblog.me'"
+          class="btn btn-light text-center btn-outline-success me-2"
+        >
+          About me
+        </button>
+        <button
+          type="button"
+          onclick="location.href='https://abdulblog.me/COMP3311.html'"
+          class="btn btn-light text-center btn-outline-secondary me-2"
+        >
+          COMP3311
+        </button>
+        <button
+          type="button"
+          onclick="location.href='https://abdulblog.me/COMP4920.html'"
+          class="btn btn-light text-center btn-outline-secondary me-2"
+        >
+          COMP4920
+        </button>
+        <button
+          type="button"
+          onclick="location.href='https://abdulblog.me/Mindmap.html'"
+          class="btn btn-light text-center btn-outline-secondary me-2"
+        >
+          Mindmap
+        </button>
+        <button
+          type="button"
+          onclick="location.href='https://abdulblog.me/ReactBlog.html'"
+          class="btn btn-light text-center btn-outline-secondary me-2"
+        >
+          React Blog
+        </button>
+      </form>
+    </nav>
+
+    <div class="alert alert-primary" role="alert">
+      Hi everyone. This is just going to be a short blog journey of me learning
+      React (via Udemy) through the Summer Holidays and how I understand some of
+      the tougher concepts. As always, credit to: https://markdowntohtml.com/
+      for the conversion of MD to HTML.
+    </div>
+    <h1 class="lead text-center display-2 text-muted">React Blog</h1>
+    <!-- MD File CODE HERE -->
+    <!-- 2/01/2023 -->
+    <h1 id="02-01-2023">02/01/2023</h1>
+    <h3 id="-u-before-react-u-">
+      <em><u>Before React</u></em
+      >:
+    </h3>
+    <p>Every web-page simply ran on:<br /></p>
+    <ul>
+      <li>Javascript, for interactivity</li>
+      <li>HTML, to display text and simple elements.</li>
+      <li>CSS, to stylise text and elements.</li>
+    </ul>
+    <p>
+      These were used to display and change the <em>DOM</em>.<br />
+      However, each browser (e.g Chrome, IE, Firefox…) had different ways to run
+      Javascript.<br />
+      This problem was solved by <em>JQuery</em>, which used its own API to make
+      sure Javascript code can run on every browser with no changes required.<br />
+    </p>
+    <p>
+      Though such applications became more and more complex: for example,
+      FaceBook.<br />
+      We quickly changed to <em>Single-Page Applications</em>, where we now
+      focus a lot more on the Javascript of an application - rather than
+      refreshing/loading all the HTML/CSS/Javascript each time a user clicks on
+      something.<br />
+      Therefore the Javascript code itself is now in charge of updating the
+      HTML/CSS.<br />
+    </p>
+    <h3 id="-u-react-concepts-u-br-">
+      <em><u>React Concepts</u></em
+      >:<br />
+    </h3>
+    <p>
+      <u>“Don’t touch the DOM, I’ll do it”</u><br />
+      <em>Imperative</em>: manipulating the DOM directly via DOM API (e.g
+      library: element.innerHTML)<br />
+    </p>
+    <ul>
+      <li>
+        <em>Document Object Model</em>: The way a website displays things,
+        manipulated by Javascript and is seen as a tree-representation of a
+        page. <br />
+      </li>
+    </ul>
+    <p>
+      <em>Declarative</em>: “DOM manipulation is a bottleneck: change/add
+      elements, reflow: move and recalculate layout of page.”<br />
+    </p>
+    <p>
+      React instead only requires the blueprints (i.e. “state”) of how the page
+      should look like - and automatically manipulates the DOM for us in the
+      best way possible.<br />
+      To summarise:
+      <em
+        >[ Based on our state -&gt; “React” and adjust/display our Page for us
+        ]</em
+      ><br />
+    </p>
+    <p>
+      <u>“Build websites like lego blocks”</u><br />
+      React is based on Reusable components (for example: Navbar) and has
+      components within components.<br />
+      State: any data that describes our app (for example: isLoggedIn: True).<br />
+      Components are built based on that data simply as Javascript functions
+      (receive Props, returns HTML inside JS).<br />
+    </p>
+    <p>
+      <u>“Unidirectional data flow”</u><br />
+      React is a JS library to increase interactivity in our apps.<br />
+      In React, we have state - which is an object that describes our app
+      through data.<br />
+      We also have components that return HTML (JSX) inside our JS code.<br />
+      <em>JSX</em>: A HTML like syntax that is used inside Javascript code.<br />
+    </p>
+    <p>
+      A component and state with JSX is combined in React to create a VirtualDOM
+      (tree like object).<br />
+      One way data flow is occurring because the VirtualDOM only changes when
+      our state changes. Data can never move up on React. Such restriction can
+      allow easier debugging of code (e.g. sign up button bugging - look at
+      where data exists/flows through).<br />
+    </p>
+    <p>
+      <u>UI, The rest is up to you</u><br />
+      AngularJS was a framework (like a Kitchen: knife, pan, stove, etc.), very
+      opinionated.<br />
+      React only works with the view (User Interface), anything else - use other
+      modules yourself (like a Stove to cook on, your knife, spoon, etc. is your
+      choice).<br />
+    </p>
+    <ul>
+      <li>React Library: Components of a blueprint to make changes.<br /></li>
+      <li>React DOM: Interacts with DOM and makes changes.<br /></li>
+    </ul>
+    <p>
+      React only needs the blueprint on how to change components. Therefore
+      React can be used in any technology stack, for example: React Native.<br />
+    </p>
+    <h3 id="-important-areas-to-focus-on-br-">
+      <em>Important areas to focus on</em>:<br />
+    </h3>
+    <ul>
+      <li>Decide on Components</li>
+      <li>Decide the State and where it lives</li>
+      <li>What changes when state changes</li>
+    </ul>
+    <!-- END 2/01/2023 -->
+    <!-- END of MD File CODE -->
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
