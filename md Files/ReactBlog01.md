@@ -70,3 +70,5 @@ Each class component always has a constructor and related methods associated wit
 - If any components update or use Set State or Props (that change the underlining address of attributes), React calls the render method again.<br>
 
 Render always returns JSX, a HTML like syntax that has the ability to integrate Javascript via curly braces.
+
+### _<u>Functional Components</u>_:<br>
