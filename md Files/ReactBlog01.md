@@ -58,8 +58,15 @@ React only needs the blueprint on how to change components. Therefore React can 
 
 # 02/01/2023
 
-### _<u>Class Components</u>_:
+### _<u>Class Components</u>_:<br>
 
 From what I have learnt, there are two main structures behind React, Class and Functional Components.<br>
 The course I am currently undertaking has introduced classes first, as it is relatively more simple and allows for an easier understanding of Functional Components.<br>
-Each class component always has a constructor and related methods associated with it. For example, React has in-built methods, such as Render and ComponentDidMount. The App component in particular, has a lifecycle associated with it.
+Each class component always has a constructor and related methods associated with it. For example, React has in-built methods, such as Render and ComponentDidMount. The App component in particular, has a lifecycle associated with it and is as follows:<br>
+
+- The App class initialises a default constructor that allows the user to setState by adding empty data structures and attributes.
+- The App class then renders these empty data structures and attributes (hence why you momentarily see a blank page before additional renders).
+- Finally, the App class then runs a method called "ComponentDidMount" and mounts any components the developer wishes to use.
+- If any components update or use Set State or Props (that change the underlining address of attributes), React calls the render method again.<br>
+
+Render always returns JSX, a HTML like syntax that has the ability to integrate Javascript via curly braces.
