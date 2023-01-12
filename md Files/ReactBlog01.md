@@ -56,6 +56,9 @@ React only needs the blueprint on how to change components. Therefore React can 
 - Decide the State and where it lives
 - What changes when state changes
 
+<br>
+<br>
+
 # 02/01/2023
 
 ### _<u>Class Components</u>_:<br>
@@ -72,3 +75,54 @@ Each class component always has a constructor and related methods associated wit
 Render always returns JSX, a HTML like syntax that has the ability to integrate Javascript via curly braces.
 
 ### _<u>Functional Components</u>_:<br>
+
+Again, from my understanding Functional Components are similar yet different to Cllass Components.<br>
+Functional Components take in arguments, that are the Props of this component, returns the same JSX we explored in Class Components; running top-to-bottom. <br>
+Functional Components do not have any class, constructors or methods associated with them, nor do they any lifecycles we discussed about Class Components.<br>
+
+In order to understand how Functional Components implement functionality similar to Render & ComponentDidMount - we need to understand Functions, Pure Functions, Inpure Functions and Side Effects.<br>
+
+#### _<u>Pure and Inpure Functions</u>_:<br>
+
+A Pure Function has two characteristics:
+
+- It will always return the same result if given the same arguments, no matter how many time it is called.
+- It has no side effects.
+  - A side effect is when a function creates some kind of effect outside of its scope (e.g. setting a variable outside its scope).
+
+```
+const pureFunc = (a, b) => {
+    return a + b;
+}
+```
+
+An Inpure Function
+
+- Has the capability to return different results despite despite giving
+  the same arguments because it is based on external factors.
+- Has side effects.
+
+```
+>let c = 3
+const inPureFunc = (a, b) => {
+    return a + b + c;
+}
+>inPureFunc(1, 1)
+5
+>c = 1
+>inPureFunc(1, 1)
+3
+```
+
+Side effect example:
+
+```
+>let c = 3
+const inPureFunc = (a, b) => {
+    c = a * b;
+    return a + b
+}
+>inPureFunc(1, 2)
+>console.log(c)
+3
+```
