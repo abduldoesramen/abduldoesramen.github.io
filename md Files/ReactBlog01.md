@@ -76,7 +76,7 @@ Render always returns JSX, a HTML like syntax that has the ability to integrate 
 
 ### _<u>Functional Components</u>_:<br>
 
-Again, from my understanding Functional Components are similar yet different to Cllass Components.<br>
+Again, from my understanding Functional Components are similar yet different to Class Components.<br>
 Functional Components take in arguments, that are the Props of this component, returns the same JSX we explored in Class Components; running top-to-bottom. <br>
 Functional Components do not have any class, constructors or methods associated with them, nor do they any lifecycles we discussed about Class Components.<br>
 
@@ -84,11 +84,13 @@ In order to understand how Functional Components implement functionality similar
 
 #### _<u>Pure and Inpure Functions</u>_:<br>
 
-A Pure Function has two characteristics:
+A <u>Pure Function</u> has two characteristics:
 
 - It will always return the same result if given the same arguments, no matter how many time it is called.
 - It has no side effects.
-  - A side effect is when a function creates some kind of effect outside of its scope (e.g. setting a variable outside its scope).
+  - A <u>side effect</u> is when a function creates some kind of effect outside of its scope (e.g. setting a variable outside its scope).
+
+The below code shows a pure function:
 
 ```
 const pureFunc = (a, b) => {
@@ -96,11 +98,13 @@ const pureFunc = (a, b) => {
 }
 ```
 
-An Inpure Function
+An <u>Inpure Function</u> also has two opposing characteristics:
 
 - Has the capability to return different results despite despite giving
   the same arguments because it is based on external factors.
-- Has side effects.
+- Has side effects (pretty much modifies something outside of its scope).
+
+In this example code, the function's output is dependent on an external factor, in this case it is the attribute "c".
 
 ```
 >let c = 3
@@ -114,7 +118,7 @@ const inPureFunc = (a, b) => {
 3
 ```
 
-Side effect example:
+Can you spot the side effect below?
 
 ```
 >let c = 3
